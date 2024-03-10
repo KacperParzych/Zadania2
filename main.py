@@ -21,4 +21,26 @@ for i in lista1:
     if i % 2 == 0:
         lista2.append(i)
 print(lista2)
+#3
+zakupy = {"ziemniaki": "kg","lizaki": "sztuki","batony": "sztuki"}
+s = {}
+#4
+def czy_prostokatny(a, b, c):
+    if a**2 + b**2 == c**2:
+        print("jest prostokatny")
+        return 0
+    elif a ** 2 + c ** 2 == b ** 2:
+        print("jest prostokatny")
+        return 0
+    elif c**2 + b**2 == a**2:
+        print("jest prostokatny")
+        return 0
+    else:
+        print("jest nie prostokatny")
+        return 0
+
+
+print(czy_prostokatny(3, 3, 3))
+
+
 
