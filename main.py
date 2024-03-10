@@ -23,24 +23,27 @@ for i in lista1:
 print(lista2)
 #3
 zakupy = {"ziemniaki": "kg","lizaki": "sztuki","batony": "sztuki"}
-s = {}
+s = [key for key in zakupy.keys()]
 #4
 def czy_prostokatny(a, b, c):
     if a**2 + b**2 == c**2:
-        print("jest prostokatny")
-        return 0
+        return "jest prostokatny"
     elif a ** 2 + c ** 2 == b ** 2:
-        print("jest prostokatny")
-        return 0
+        return "jest prostokatny"
     elif c**2 + b**2 == a**2:
-        print("jest prostokatny")
-        return 0
+        return "jest prostokatny"
     else:
-        print("jest nie prostokatny")
-        return 0
+        return "jest nie prostokatny"
+
 
 
 print(czy_prostokatny(3, 3, 3))
 
-
-
+#5
+def pole_trapezu(q=5,w=3,e=6):
+    pole = (1/2)*(q+w)*e
+    return pole
+print(pole_trapezu())
+#6
+def iloczyn_elementow(o=1, p=4, ile=10):
+    elementy =
