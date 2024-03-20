@@ -45,5 +45,27 @@ def pole_trapezu(q=5,w=3,e=6):
     return pole
 print(pole_trapezu())
 #6
+import sys
+import math
 def iloczyn_elementow(o=1, p=4, ile=10):
-    elementy =
+    for i in range(ile):
+        o = p*o
+    return o
+
+print(iloczyn_elementow())
+
+
+import math
+
+def pierwiastek(l):
+    if l > 0:
+        wynik = math.sqrt(l)
+        return wynik
+    else:
+        print("Error!")
+    return None
+
+print("Podaj liczbe")
+l = float(input())
+print(pierwiastek(l))
+
